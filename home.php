@@ -23,7 +23,7 @@ tr:nth-child(even) {
   
 .confirm {
   position: absolute; 
-  bottom: -220pt;
+  bottom: -210pt;
   right: 355pt; 
   width: 406px;
   height: 40pt;
@@ -40,7 +40,7 @@ tr:nth-child(even) {
 
 <table>
   <tr>
-    <th rowspan="3"><img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:75%"></th>
+    <th rowspan="3"><img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:60%"></th>
   </tr>
   <tr>
     <td><b>Name: <?php echo $_SESSION['user_first_name'] ?> <?php echo $_SESSION['user_last_name'] ?></b> </td>
