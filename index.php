@@ -51,7 +51,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
 	 	require_once 'category_list.php';
 	    break;
 	    case 'AddProd':
-		require_once 'form_create.php';
+		require_once 'addproduct.php';
 	    break;
 	    case 'Details':
 		require_once 'product_details.php';
