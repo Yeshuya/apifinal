@@ -32,5 +32,5 @@
 		</tr>
 	</table>
 <a href="index.php?navigation=update&id=<?php echo $id ?>"><button class="confirm1" value="Update" type="submit">Update</button></a>
-<a href="pro_delete.php?id=<?php echo $id ?>"><button class="confirm2" value="Delete" type="submit">Delete</button></a>
+<a href="index.php?navigation=delete&id=<?php echo $id ?>"><button class="confirm2" value="Delete" type="submit">Delete</button></a>
 
