@@ -21,10 +21,17 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
 
       <div class="topnav_container">
 	  <div class="topnav">
-        	<a href="index.php">Account</a>
-        	<a href="index.php?navigation=product">Products</a>
-        	<a href="index.php?navigation=categories">Category</a>
-        	<a href="index.php?navigation=create">Create</a>
+		<div class="dropdown">
+			<button class="dropbtn">Product
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="index.php?navigation=product">Manage Product</a>
+				<a href="index.php?navigation=create">Add Product</a>
+			</div>
+		  </div>
+		  <a href="index.php?navigation=categories">Category</a>
+		  <a href="index.php">Account</a>
 	  </div>
       </div>
       
