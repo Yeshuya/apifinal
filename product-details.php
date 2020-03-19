@@ -1,32 +1,36 @@
 <?php
-$id = $_GET['id'];
-$json = file_get_contents("http://rdapi.herokuapp.com/product/read_one.php?id=".$id);
+	$id = $_GET['id'];
+ 	$json = file_get_contents('http://rdapi.herokuapp.com/product/read_one.php?id='.$id);
+ 	$data = json_decode($json,true);
+ 	$details = array('records' => $data);
+ 	$result = $details['records'];
 
-$data = json_decode($json,true);
-$details = array('records' => $data);
-$list = $details['records'];
-
-$value = $list;
 ?>
-<h1> Product Details </h1>
 
-<table>
-    <tr>
-        <th>Product</th>
-        <th>Description</th>
-        <th>Price</th>
-        <th>Category ID</th>
-        <th></th>
-        <th></th>
-    </tr>
+<link rel="stylesheet" type="text/css" href="css/styles_products.css">
 
-    <tr>
-        <td><?php echo $value['name'];?></td>
-        <td><?php echo $value['description'];?></td>
-        <td><?php echo $value['price'];?></td>
-        <td><?php echo $value['category_id'];?></td>
-        <td><a href="index.php?navigation=update&id=<?php echo $id ?>">Update</a></td>
-        <td><a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></td>
-    </tr>
+	<br>
+	<h1> PRODUCT DETAILS </h1>
+	<hr style ="width: 25%;">
+	<br>
+	<table style="border: 1px black solid;">
+		<tr>
+			<td><h2>Name:</h2></td>
+			<td><h2><?php echo $result['name']; ?></h2></td>
+		</tr>
+		<tr>
+			<td><h2>Description: </h2></td>
+			<td><h2><?php echo $result['description']; ?></h2></td>
+		</tr>
+		<tr>
+			<td><h2>Price: </h2></td>
+			<td><h2><?php echo $result['price']; ?></h2></td>
+		</tr>
+		<tr>
+			<td><h2>Category: </h2></td>
+			<td><h2><?php echo $result['category_name']; ?></h2></td>
+		</tr>
+	</table>
+<a href="index.php?navigation=update&id=<?php echo $id ?>"><button class="confirm1" value="Update" type="submit">Update</button></a>
+<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a><button class="confirm2" value="Delete" type="submit">Delete</button></a>
 
-</table>
