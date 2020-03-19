@@ -54,6 +54,9 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
             case 'update':
               require_once 'form_update.php';
               break;
+	    case 'delete':
+              require_once 'deleteproduct.php';
+              break;
             default:
               require_once 'home.php';
               break;
@@ -83,6 +86,9 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
                   break;
                 case 'update':
                   require_once 'form_update.php';
+                  break;
+		case 'delete':
+              	  require_once 'deleteproduct.php';
                   break;
                 default:
                   require_once 'home.php';
