@@ -63,7 +63,6 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
 		require_once 'deleteproduct.php';
 	    break;	
 	    default:
-		require_once 'home.php';
 	    break;
           }
         }else{
@@ -92,8 +91,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
                 case 'update':
                   require_once 'form_update.php';
                   break;
-                default:
-                  require_once 'home.php';
+		default:
                   break;
               }
             }
