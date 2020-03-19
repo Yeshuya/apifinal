@@ -40,7 +40,7 @@ tr:nth-child(even) {
 
 <table>
   <tr>
-    <th rowspan="3" style="width: 100px"><img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:60%"></th>
+    <th rowspan="3"><img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:60%"></th>
   </tr>
   <tr>
     <td><b>Name: <?php echo $_SESSION['user_first_name'] ?> <?php echo $_SESSION['user_last_name'] ?></b> </td>
