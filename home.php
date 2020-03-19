@@ -36,7 +36,9 @@ tr:nth-child(even) {
 }
 </style>
 
-<h1>Welcome User!</h1>
+<br>
+
+<h1>WELCOME USER!</h1>
 
 <table>
   <tr>
