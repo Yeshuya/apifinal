@@ -2,8 +2,8 @@
 
 <style>
 table, th, td {
-  border: 1px solid black;
   padding: 15px;
+  align: center;
 }
 </style>
 
