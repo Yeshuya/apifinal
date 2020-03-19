@@ -1,18 +1,28 @@
-<h1>Welcome User</h1>
-
 <style>
-table{
-  margin-left: 100px;
+h1{
+  text-align: center;
 }
   
-th, td {
-  padding: 15px;
-  align: center;
+table{
+  margin-left: 300px;
+  width: 50%;
+  font-family: "Quicksand";
+  border-collapse: collapse;  
+}
+  
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
   
 .confirm {
   position: absolute; 
-  bottom: -330pt;
+  bottom: -240pt;
   right: 355pt; 
   width: 406px;
   height: 40pt;
@@ -24,6 +34,8 @@ th, td {
   margin-bottom: 50px;
 }
 </style>
+
+<h1>Welcome User</h1>
 
 <table>
   <tr>
