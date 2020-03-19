@@ -23,7 +23,7 @@ tr:nth-child(even) {
   
 .confirm {
   position: absolute; 
-  bottom: -190pt;
+  bottom: -100pt;
   right: 355pt; 
   width: 406px;
   height: 40pt;
