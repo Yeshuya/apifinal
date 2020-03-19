@@ -36,5 +36,5 @@ th, td {
     <td>Email: <?php echo $_SESSION['user_email_address'] ?></td>
   </tr>
 </table>
-<button class="confirm" type="submit"  href="logout-google.php"> Logout </button>
+<a href="logout-google.php"><button class="confirm"> Logout </button></a>
 
