@@ -1,28 +1,34 @@
 <?php
-$json = file_get_contents("http://rdapi.herokuapp.com/product/read.php");
-
-$data = json_decode($json,true);
-$list = $data['records'];
-
-
+	$jsonCategory = file_get_contents('http://rdapi.herokuapp.com/category/read.php');
+	$categoryData = json_decode($jsonCategory,true);
+	$category = $categoryData['records'];
 ?>
 
-<h1> Category list </h1>
+<link rel="stylesheet" type="text/css" href="css/styles_product.css">
+
+<h1>CATEGORY LIST</h1>
+<BR>
 
 <table>
-    <tr>
-        <th>Category ID</th>
-        <th>Category Name</th>
-    </tr>
-<?php
-foreach($list as $value){
+		<tr>
+			<td> <b>ID</b> </td>
+			<td> <b>Name</b> </td>
+			<td> <b>Description</b> </td>
+		</tr>
+<?php 
+	foreach($category as $result)
+	{
 ?>
-    <tr>
-        <td><?php echo $value['category_id'];?></td>
-        <td><?php echo $value['category_name'];?></td>
-    </tr>
+		<tr>
+      		<td><?php echo $result['id']; ?> </td>
+     		<td><?php echo $result['name']; ?> </td>
+      		<td><?php echo $result['description'];?> </td>
+		</tr>
 <?php
-}
-    ?>
+	}
+?>
 </table>
+<br>
+<br>
+<br>
 
