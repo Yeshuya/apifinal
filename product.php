@@ -20,8 +20,8 @@
 <h1> Product List </h1>\
 
 <form action="index.php?navigation=product" method="POST">
-    <input type="text" name="search" placeholder="Search Product Name">
-	<input type="submit" name="submit" value="Search">
+    <input class="search" type="text" name="search" placeholder="Search Product Name">
+    <input class="submit" type="submit" name="submit" value="Search">
 </form>
 
 <table>
