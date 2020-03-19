@@ -1,11 +1,12 @@
 <style>
 h1{
   text-align: center;
+  font-family: "Quicksand";
 }
   
 table{
-  margin-left: 300px;
-  width: 50%;
+  margin-left: 190px;
+  width: 75%;
   font-family: "Quicksand";
   border-collapse: collapse;  
 }
@@ -13,6 +14,7 @@ table{
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
+  font-size: 20px;
   padding: 8px;
 }
 
@@ -35,11 +37,11 @@ tr:nth-child(even) {
 }
 </style>
 
-<h1>Welcome User</h1>
+<h1>Welcome User!</h1>
 
 <table>
   <tr>
-    <th rowspan="3"><img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:50%"></th>
+    <th rowspan="3"><img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:75%"></th>
   </tr>
   <tr>
     <td>Name: <?php echo $_SESSION['user_first_name'] ?> <?php echo $_SESSION['user_last_name'] ?> </td>
