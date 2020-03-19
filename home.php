@@ -3,12 +3,13 @@
 <style>
 table, th, td {
   border: 1px solid black;
+  padding: 15px;
 }
 </style>
 
 <table>
   <tr>
-    <th rowspan="3"><img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:100%"></th>
+    <th rowspan="3"><img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:50%"></th>
   </tr>
   <tr>
     <td>Name: <?php echo $_SESSION['user_first_name'] ?> <?php echo $_SESSION['user_last_name'] ?> </td>
