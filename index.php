@@ -20,10 +20,12 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
       </div>
 
       <div class="topnav_container">
-        <a href="index.php">Home</a>
-        <a href="index.php?navigation=product">Products</a>
-        <a href="index.php?navigation=categories">Category</a>
-        <a href="index.php?navigation=create">Create</a>
+	  <div class="topnav">
+        	<a href="index.php">Home</a>
+        	<a href="index.php?navigation=product">Products</a>
+        	<a href="index.php?navigation=categories">Category</a>
+        	<a href="index.php?navigation=create">Create</a>
+	  </div>
       </div>
       
       <div class="content">
@@ -82,7 +84,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
             }
         ?>
       </div>
-    </body><!-- credits: john paul maja :D <3 -->
+    </body>
 </html>
 
 
