@@ -13,7 +13,6 @@ table{
   
 td, th {
   border: 1px solid #dddddd;
-  text-align: left;
   font-size: 20px;
   padding: 8px;
 }
@@ -24,7 +23,7 @@ tr:nth-child(even) {
   
 .confirm {
   position: absolute; 
-  bottom: -240pt;
+  bottom: -220pt;
   right: 355pt; 
   width: 406px;
   height: 40pt;
@@ -44,10 +43,10 @@ tr:nth-child(even) {
     <th rowspan="3"><img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:75%"></th>
   </tr>
   <tr>
-    <td>Name: <?php echo $_SESSION['user_first_name'] ?> <?php echo $_SESSION['user_last_name'] ?> </td>
+    <td><b>Name: <?php echo $_SESSION['user_first_name'] ?> <?php echo $_SESSION['user_last_name'] ?></b> </td>
   </tr>
   <tr>
-    <td>Email: <?php echo $_SESSION['user_email_address'] ?></td>
+    <td><b>Email: <?php echo $_SESSION['user_email_address'] ?></b></td>
   </tr>
 </table>
 <a href="logout-google.php"><button class="confirm"> Logout </button></a>
