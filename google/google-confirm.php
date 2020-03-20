@@ -1,6 +1,5 @@
 <?php
 include('config.php');
-//google  credits: john paul maja :D <3 
 $login_button = '';
 
 if(isset($_GET["code"])){
@@ -28,6 +27,6 @@ if(isset($_GET["code"])){
  }
 }
 if(!isset($_SESSION['access_token'])){
- $login_button = '<br><a href="'.$google_client->createAuthUrl().'"><img style="" src="images/google.png" /></a>';
+ $login_button = '<br><a href="'.$google_client->createAuthUrl().'"><img style="width: 500px; height 240px;" src="images/google.png" /></a>';
 }
 ?>
