@@ -1,11 +1,7 @@
 <?php 
 $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET['navigation']: '';
 
-  if($login_button == true)
-  {
-    echo "Welcome please Log-in First"
-    include('google/google-confirm.php');
-  }
+  include('google/google-confirm.php');
   if($login_button == true)
   {
     include('facebook/facebook-confirm.php');
