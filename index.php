@@ -1,9 +1,13 @@
 <?php 
 $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET['navigation']: '';
-//credits: john paul maja :D <3
 
-  include('google/google-confirm.php');
-  if($login_button == true){
+  if($login_button == true)
+  {
+    echo "Welcome please Log-in First"
+    include('google/google-confirm.php');
+  }
+  if($login_button == true)
+  {
     include('facebook/facebook-confirm.php');
   }
 ?>
@@ -36,7 +40,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
       </div>
       
       <div class="content">
-        <?php //google ------ credits: john paul maja :D <3
+        <?php 
         if($login_button == ''){
           switch($navigation){
             case 'product':
@@ -67,7 +71,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
 
         ?>
         <br>
-        <?php //facebook
+        <?php
             if(isset($facebook_login_url)){
             echo '<div align="center">' .$facebook_login_url. '</div>';
             }else{
